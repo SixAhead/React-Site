@@ -1,12 +1,70 @@
-# React + Vite
+# The Cinematic Fly 🎬🪰
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A sleek, modern, cinematic storytelling experience built in React with GSAP animations, scroll smoothing, and custom hover effects.
 
-Currently, two official plugins are available:
+## Live Demo
+On Vercel
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Project Overview
+This site is designed as a personal storytelling portfolio combining:
+- Smooth scrolling animations using GSAP's `ScrollSmoother`
+- Word scramble text reveal interactions
+- Responsive photo gallery with performance optimizations
+- Modular React components for scalability
+- Clean, minimal UI with cinematic feel
 
-## Expanding the ESLint configuration
+## Tech Stack
+- **React** (via Vite)
+- **GSAP** (ScrollSmoother, ScrambleTextPlugin)
+- **React Router DOM**
+- **Custom CSS** + Responsive Layouts
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Folder Structure
+
+src/
+│   App.jsx
+│   global.css
+│   index.css
+│   main.jsx
+│   
+├───components
+│       Header.jsx
+│       Images.jsx
+│       ScrambleHoverBlock.jsx
+│
+├───pages
+│   │   About.jsx
+│   │   Awesome.jsx
+│   │   Home.jsx
+│   │   PhotoPage.jsx
+│   │
+│   ├───backups
+│   │       About.jsx
+│   │       Awesome.jsx
+│   │       Home.jsx
+│   │       index copy.css
+│   │       ScrambleHoverBlock copy.jsx
+│   │
+│   └───photosmooth
+│           Photos.jsx
+│
+├───router
+│       index.jsx
+│
+├───styles
+│       gsap-brand.css
+│       ScrambleHoverBlock.css
+│
+└───views
+        Boxes.jsx
+        ScramblePage.jsx
+
+
+        
+## 📷 Credits
+Photography and creative content by **SixAhead**.
+
+## 🧪 Local Development
+```bash
+npm install
+npm run dev
