@@ -1,0 +1,21 @@
+.scramble-wrapper {
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5vw auto;
+  max-width: 800px;
+  font-family: 'Space Mono', monospace;
+  font-size: clamp(20px, 4vw, 25px);
+  color: #000;
+  text-shadow: 1px 1px 2px black;
+  background: #fff;
+  padding: 2rem;
+  line-height: 1.6;
+}
+
+.scramble-wrapper.visible {
+  opacity: 1;
+}
