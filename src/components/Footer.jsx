@@ -17,7 +17,7 @@ export default function Footer() {
       <div style={{ display: "flex", gap: "1rem",  }}>
         
         <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" style={{ color: "#000", textDecoration: "none" }}>Instagram</a>
-        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" style={{ color: "#000", textDecoration: "none" }}>Twitter</a>
+        <a href="https://www.tiktok.com/@thecinematicfly" target="_blank" rel="noopener noreferrer" style={{ color: "#000", textDecoration: "none" }}>Tiktok</a>
         <a href="mailto:info@cinematicfly.com" style={{ color: "#000", textDecoration: "none" }}>Email</a>
       </div>
     </footer>
