@@ -10,8 +10,8 @@
 
 :root {
   
-  --f-5-min: 30;
-  --f-5-max: 120;
+  --f-5-min: 20;
+  --f-5-max: 100;
   --fluid-bp: 1; /* ✅ Forces it to use the max size for now */
 
   --step-5: calc(((var(--f-5-min) / 16) * 1rem) + (var(--f-5-max) - var(--f-5-min)) * var(--fluid-bp));
@@ -65,7 +65,7 @@ a {
 }
 
 h1 {
-  font-size: 12rem !important;
+  font-size: 10rem !important; /* ✅ Hero title szie */
   line-height: 1;
   text-align: center;
   text-transform: uppercase;
@@ -80,7 +80,7 @@ h1 {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   align-items: stretch;
   justify-items: center;
-  margin-top: 10rem;
+  margin-top: 18rem;
 }
 
 img {
@@ -109,6 +109,11 @@ img {
   transform: translateY(-50%) rotate(2deg);
   left: -6%;
 }
+
+.hero-title {
+  opacity: 0;
+}
+
 
 .heading {
   position: relative;

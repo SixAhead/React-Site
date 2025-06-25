@@ -19,29 +19,92 @@ export default function HeroScrollReveal() {
       effects: true,
       
     });
+
+        gsap.to(".hero-title", {
+      opacity: 1,
+      duration: 6,
+      delay: 0.5,
+      ease: "power2.out",
+    });
+
     
 
     gsap.from(".draw", {
       // drawSVG: "0%", // Requires DrawSVGPlugin
       opacity: 0,
-      scale: 0.8,
+      scale: 0.6,
       ease: "expo.out",
       scrollTrigger: {
-      trigger: ".hero",      // ⬅️ Use the whole section as the trigger
-      start: "top top",       // ⬅️ Begin pinning as soon as it hits the top of the page
-      end: "+=700",          // ⬅️ Tune this value to match scroll distance you want
-      scrub: true,
-      pin: ".pin",
-      pinSpacing: true,       // ⬅️ Allow layout flow to stay normal
-      markers: false
+        trigger: ".hero",      // ⬅️ Use the whole section as the trigger
+        start: "top top",       // ⬅️ Begin pinning as soon as it hits the top of the page
+        end: "+=1100",          // ⬅️ Tune this value to match scroll distance you want
+        scrub: true,
+        pin: ".pin",
+        pinSpacing: true,       // ⬅️ Allow layout flow to stay normal
+        markers: false
     }
 
     });
+
+    gsap.fromTo(".hero h1",
+      { scale: 1 },
+      {
+        scale: 1.2,
+        ease: "none",
+        scrollTrigger: {
+        trigger: ".hero",
+        start: "top top",
+        end: "+=1200",
+        scrub: true,
+        markers: false
+      }
+      }
+      );
+
+          gsap.fromTo(".text-zoom-section", 
+      { scale: 0.9, opacity: 0.1 },
+      {
+        scale: 1.4,
+        opacity: 1,
+        scrollTrigger: {
+          trigger: ".text-zoom-section",
+          start: "top 100%",
+          end: "top 10%",
+          scrub: true,
+          markers: false
+        }
+      }
+    );
+    <div style={{ height: '30vh' }}></div>
+
+
+        gsap.fromTo(".second-text-block", 
+      { scale: 0.9, opacity: 0.1 },
+      {
+        scale: 1.4,
+        opacity: 1,
+        scrollTrigger: {
+          trigger: ".second-text-block",
+          start: "top 40%",
+          end: "top 60%",
+          scrub: true,
+          pin: true,
+          markers: false
+        }
+      }
+    );
+
+
 
     return () => {
       smoother.kill();
       ScrollTrigger.getAll().forEach(trigger => trigger.kill());
     };
+
+
+
+
+
   }, []);
 
   return (
@@ -61,11 +124,9 @@ export default function HeroScrollReveal() {
         <section className="hero pad-l">
           <div className="heading">
             <div className="pin">
-              <h1>
+              <h1 className="hero-title">
                 <span className="clamp">THE CINEMATIC FLY
-                  <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 842.14 500">
-                    <path className="draw" d="M336.2,130.05C261.69,118,16.52,122,20.65,244.29c4.17,123,484.3,299.8,734.57,108.37,244-186.65-337.91-311-546.54-268.47" fill="none" stroke="#8486aa" strokeMiterlimit="10" strokeWidth="8" />
-                  </svg>
+                
                 </span>
                 <span className="yt"></span>
               </h1>
@@ -80,8 +141,62 @@ export default function HeroScrollReveal() {
           </div>
         </section>
 
+        
+
+        <section className="text-zoom-section" style={{
+          paddingBottom: "10rem",
+          padding: "4rem 2rem",
+          maxWidth: "800px",
+          margin: "0 auto",
+          fontSize: "1.25rem",
+          color: "#333",
+          lineHeight: "1.6",
+        }}>
+          
+          <h2>What This Project Is About</h2>
+          <p>
+            This cinematic journey scrolls through visual storytelling, 
+            engaging the viewer with immersive motion and layered transitions. Here, we describe what inspired the piece and how it was crafted.
+            This cinematic journey scrolls through visual storytelling, 
+            engaging the viewer with immersive motion and layered transitions. Here, we describe what inspired the piece and how it w
+          </p>
+        </section>
+
+        
+
+
+                <section className="text-zoom-section second-text-block" style={{
+          padding: "4rem 2rem",
+          maxWidth: "800px",
+          margin: "50rem auto",
+          margin: "0 auto",
+          fontSize: "1.25rem",
+          color: "#333",
+          lineHeight: "1.6",
+        }}>
+          <h2>Inspiration Behind the Visuals</h2>
+          <p>
+            Each frame and transition in this scroll experience was selected to evoke a sense of movement, memory, and emotion.
+            The goal is to merge cinematic storytelling with interactive design, making the user feel as though they are in motion too.
+          </p>
+        </section>
+
+
+
         <section className="spacer"></section>
       </div>
+
+      
+      
     </div>
+
+    
+    
   );
+
+
+
+
+
+  
 }

@@ -1,6 +1,6 @@
 import { Routes, Route } from 'react-router-dom';
+import ScrollToTop from './components/ScrollToTop'; // 👈 import this
 import Header from './components/Header';
-
 import Home from './pages/Home';
 import About from './pages/About';
 import Awesome from './pages/Awesome';
@@ -10,6 +10,7 @@ import PhotoPage from './pages/PhotoPage';
 function App() {
   return (
     <>
+      <ScrollToTop />
       <Header /> {/* Add this here */}
       <Routes>
         <Route path="/" element={<Home />} />

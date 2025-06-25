@@ -13,7 +13,7 @@ function Header() {
           }}>
       <Link to="/" className="glowing-button" style={{
         width: '10%',
-        fontSize: '1.5rem',
+        fontSize: '1.2rem',
         textAlign: 'center',
         display: 'block',
         marginBottom: '-1.2rem',
@@ -26,7 +26,7 @@ function Header() {
       <nav style={{
         backgroundColor: 'transperant',
         color: '#000',
-        fontSize: '1.5rem',
+        fontSize: '2rem',
         padding: '0rem',
         display: 'flex',
         justifyContent: 'center',

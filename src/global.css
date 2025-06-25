@@ -45,6 +45,7 @@ html, body {
   background: #fff;
   font-size: 30px;
   color: #000;
+  text-decoration: none;
   box-shadow: 0 0 10px #070707, 0 0 20px #070707, 0 0 40px #00eeff;
 }
 

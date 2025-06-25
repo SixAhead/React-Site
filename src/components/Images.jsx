@@ -10,7 +10,7 @@ const ImagesPage = () => {
             media="(min-width: 1500px)"
           />
           <source
-            srcSet="https://images.unsplash.com/photo-1506744038136-46273834b3fb?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0NDMzNTU3OA&ixlib=rb-1.2.1&q=85&w=1000"
+            srcSet="/photos/Shelter.jpg"
             media="(min-width: 700px)"
           />
           <img
