@@ -3,6 +3,7 @@ import { gsap } from 'gsap';
 import { SplitText } from 'gsap/SplitText';
 import { ScrambleTextPlugin } from 'gsap/ScrambleTextPlugin'; // ✅ Add this line
 import '../styles/ScrambleHoverBlock.css';
+import Footer from '../components/Footer'; // Adjust path if needed
 
 gsap.registerPlugin(ScrambleTextPlugin, SplitText);
 
@@ -135,7 +136,11 @@ and are part of the creative process that keeps my work grounded and personal. I
 
       </p>
     </div>
-  );
-}
 
+    
+  );
+
+  
+}
+<Footer />
 export default ScrambleHoverBlock;

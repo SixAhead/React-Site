@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Footer from '../components/Footer'; // Adjust path if needed
 const ImagesPage = () => {
   return (
     <main className="images">
@@ -63,8 +63,12 @@ const ImagesPage = () => {
       <div className="spacer"></div>
       <div className="spacer"></div>
       <div className="spacer"></div>
+
+      <Footer />
       
     </main>
+
+    
   );
 };
 

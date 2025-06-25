@@ -85,15 +85,6 @@ button {
   font-size: 40px;
 }
 
-footer {
-  position: fixed;
-  right: 0px;
-  bottom: 0px;
-  padding: 6px 10px 10px 12px;
-  border-top-left-radius: 26px;
-  z-index: 100;
-  background-color: rgba(0, 0, 0, 0.5);
-}
 
 .end {
   position: absolute;

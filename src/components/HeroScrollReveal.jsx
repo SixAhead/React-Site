@@ -2,6 +2,8 @@ import { useEffect } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import ScrollSmoother from "gsap/ScrollSmoother";
+import Footer from '../components/Footer'; // Adjust path if needed
+
 // import DrawSVGPlugin from "gsap/DrawSVGPlugin"; // Uncomment if you have access
 
 import "../styles/HeroScrollReveal.css";
@@ -153,18 +155,19 @@ export default function HeroScrollReveal() {
           lineHeight: "1.6",
         }}>
           
-          <h2>What This Project Is About</h2>
+          <h2>What I Am About.</h2>
           <p>
-            This cinematic journey scrolls through visual storytelling, 
-            engaging the viewer with immersive motion and layered transitions. Here, we describe what inspired the piece and how it was crafted.
-            This cinematic journey scrolls through visual storytelling, 
-            engaging the viewer with immersive motion and layered transitions. Here, we describe what inspired the piece and how it w
+            I am a digital creator, content producer, and storyteller based in Wexford, Ireland. My work combines photography, videography, voice work, and honest storytelling to create content that resonates with a global audience.
+            Drawing inspiration from the natural beauty of Wexford and my life experiences, I create content focused on personal growth, mental health, and resilience. My two dogs, Ashah and Rebel, a Weimaraner and a German Shepherd, often accompany me on creative shoots 
+            and are part of the creative process that keeps my work grounded and personal. I love you awlays! JD x
+
           </p>
         </section>
 
+
         
 
-
+{/*
                 <section className="text-zoom-section second-text-block" style={{
           padding: "4rem 2rem",
           maxWidth: "800px",
@@ -174,16 +177,19 @@ export default function HeroScrollReveal() {
           color: "#333",
           lineHeight: "1.6",
         }}>
-          <h2>Inspiration Behind the Visuals</h2>
+          <h2>Inspiration Behind the Visuals.</h2>
           <p>
             Each frame and transition in this scroll experience was selected to evoke a sense of movement, memory, and emotion.
             The goal is to merge cinematic storytelling with interactive design, making the user feel as though they are in motion too.
           </p>
         </section>
+*/}
 
 
+        <section className="spacer" style={{ height: "30vh" }}></section>
 
-        <section className="spacer"></section>
+        <Footer />
+
       </div>
 
       

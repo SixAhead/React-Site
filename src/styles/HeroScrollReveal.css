@@ -24,6 +24,11 @@ header {
   border: none;
 }
 
+footer {
+  position: static !important;
+}
+
+
 button {
   cursor: pointer;
 }
