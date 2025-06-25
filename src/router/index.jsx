@@ -7,6 +7,7 @@ import { useGSAP } from '@gsap/react';
 import Boxes from '../views/Boxes';
 import Images from '../views/Images';
 import ScramblePage from "../views/ScramblePage"; // Add this import
+import Home from '../pages/Home';
 
 
 gsap.registerPlugin(ScrollSmoother, useGSAP);
@@ -26,7 +27,7 @@ export default function Router() {
       <div id="smooth-content">
         <Routes>
           <Route>
-            <Route index element={<Boxes />} />
+            <Route index element={<Home />} />
             <Route path="images" element={<Images />} />
             <Route path="/scramble" element={<ScramblePage />} />
           </Route>

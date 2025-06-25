@@ -24,3 +24,39 @@ html, body {
 #smooth-content {
   will-change: transform;
 }
+
+/* src/global.css */
+
+.glowing-button {
+  padding: 12px 24px;
+  background: transparent;
+  color: #000;
+  border: 1px solid #000;
+  border-radius: 40px;
+  font-weight: bold;
+  font-size: 22px;
+  cursor: pointer;
+  box-shadow: 0 0 5px #070707, 0 0 10px #070707;
+  transition: all 0.5s ease;
+  text-decoration: none;
+}
+
+.glowing-button:hover {
+  background: #fff;
+  font-size: 30px;
+  color: #000;
+  box-shadow: 0 0 10px #070707, 0 0 20px #070707, 0 0 40px #00eeff;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#root, #smooth-wrapper, #smooth-content {
+  width: 100%;
+  overflow-x: hidden;
+}

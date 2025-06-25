@@ -38,6 +38,7 @@ export default function PhotoPage() {
         
         <Images />
         {/* any extra bottom spacing */}
+         <div style={{ height: '20vh' }}></div>
       </div>
     </div>
   );

@@ -53,11 +53,17 @@ const ImagesPage = () => {
           <img
             data-speed="auto"
             src="/photos/Cliff.jpg"
+            
             alt=""
           />
+          
         </div>
+
       </section>
       <div className="spacer"></div>
+      <div className="spacer"></div>
+      <div className="spacer"></div>
+      
     </main>
   );
 };

@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@700&display=swap');
+
+#smooth-wrapper {
+  font-family: 'Unbounded', sans-serif;
+}
+
+.pin-spacer {
+  pointer-events: none;
+}
+
+:root {
+  
+  --f-5-min: 30;
+  --f-5-max: 120;
+  --fluid-bp: 1; /* ✅ Forces it to use the max size for now */
+
+  --step-5: calc(((var(--f-5-min) / 16) * 1rem) + (var(--f-5-max) - var(--f-5-min)) * var(--fluid-bp));
+}
+
+header {
+  padding: 2rem;
+  display: flex;
+  background-color: transparent;
+  border: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:hover {
+  background: var(--purple);
+  background-image: none;
+}
+
+.hero {
+  padding-block: 0;
+  margin-top: 0;
+  position: relative;
+  padding-top: 20rem;
+}
+
+
+.logo {
+  width: 50px;
+  max-width: 40vw;
+  filter: invert(1);
+}
+
+nav {
+  margin-left: auto;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+}
+
+li + li {
+  padding-left: 1rem;
+}
+
+a {
+  color: white;
+}
+
+h1 {
+  font-size: 12rem !important;
+  line-height: 1;
+  text-align: center;
+  text-transform: uppercase;
+  color: rgb(45, 44, 63);
+  z-index: 10;
+  position: relative;
+}
+
+
+.images {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: stretch;
+  justify-items: center;
+  margin-top: 10rem;
+}
+
+img {
+  max-width: 100%;
+  height: 60vh;
+  object-fit: cover;
+}
+
+.spacer {
+  height: 100vh;
+}
+
+.clamp {
+  position: relative;
+  z-index: -1;
+}
+
+.yt {
+  z-index: 3;
+}
+
+.clamp svg {
+  position: absolute;
+  width: 112%;
+  top: 50%;
+  transform: translateY(-50%) rotate(2deg);
+  left: -6%;
+}
+
+.heading {
+  position: relative;
+  z-index: 2;
+  mix-blend-mode: difference;
+  perspective: 1000px;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+  transform: rotate(0.1deg);
+
+  height: 15vh;
+  display: flex;
+  align-items: flex-start;   /* ⬅️ was center — now moves it up */
+  justify-content: center;
+  padding-top: 5h;         /* ⬅️ fine-tune this as needed */
+
+}
+
+.pin,
+h1 {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+.images {
+  z-index: -10;
+}
+
+.logo svg {
+  opacity: 0;
+}

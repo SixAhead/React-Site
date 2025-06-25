@@ -6,7 +6,7 @@
 
 body {
   overscroll-behavior: none;
-  background-color: #ffffff;
+  background-color: #ffffff;  /* homepage main background colour */
   margin: 0;
   padding: 0;
   overflow-x: hidden;
@@ -143,12 +143,12 @@ header .icon {
 
 /* IMAGES */
 .container {
-  max-width: 2500px;
+  max-width: 100vw;
   margin: 0 auto;
 }
 
 .spacer {
-  height: 100vh;
+  height: 200vh;
 }
 
 .image-grid {
@@ -178,7 +178,7 @@ header .icon {
 .image-grid .image_cont:nth-child(1) {
   grid-column: 1/-1;
   grid-row: 1;
-  height: 95vh;
+  height: 100vh;
 }
 
 .image-grid .image_cont:nth-child(2) {
@@ -200,20 +200,23 @@ header .icon {
 .image-grid .image_cont:nth-child(4) {
   grid-column: 1/-1;
   grid-row: 4;
-  height: 60vh;
+  height: 80vh;
 }
 
 .image-grid .image_cont:nth-child(5) {
-  grid-column: 4 / span 8;
+  grid-column: 2 / span 8;
   grid-row: 5;
   height: 80vh;
 }
 
 .image-grid .image_cont:nth-child(6) {
-  grid-column: 2 / span 8;
+  grid-column: 2 / span 4;
   grid-row: 6;
   height: 80vh;
 }
+
+
+
 
 @media screen and (min-width: 1000px) {
   .image-grid .image_cont {
@@ -228,13 +231,19 @@ header .icon {
     grid-column: 8 / span 4;
   }
 
+    .image-grid .image_cont:nth-child(4) {
+    grid-column: 1 / span 12;
+  }
+
   .image-grid .image_cont:nth-child(5) {
-    grid-column: 8 / span 4;
+    grid-column: 2/ span 4;
   }
 
   .image-grid .image_cont:nth-child(6) {
-    grid-column: 2 / span 4;
+    grid-column: 3 / span 8;
   }
+
+
 }
 
 .overlay {
@@ -245,12 +254,35 @@ header .icon {
   grid-column-gap: 1rem;
   grid-row-gap: 10rem;
   width: 100vw;
+  overflow-x: hidden;
   margin: 0 auto;
   z-index: -1;
 }
 
 .overlay div {
   opacity: 0.2;
-  border-left: 0.5px white solid;
-  border-right: 0.5px white solid;
+  border-left: 0px white solid;
+  border-right: none;
+}
+
+.overlay div:first-child {
+  border-left: none;
+}
+
+* {
+  outline: none;
+}
+
+html, body {
+  position: static;
+  width: auto;
+  height: auto;
+  overflow: auto;
+  outline: none; /* remove the debug outline */
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }

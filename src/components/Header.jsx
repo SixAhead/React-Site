@@ -3,30 +3,40 @@ import { Link } from 'react-router-dom';
 
 function Header() {
   return (
-    <header style={{ width: '98%' }}>
-      <div style={{
-        backgroundColor: 'rgba(31, 31, 31, 0)',
-        padding: '1rem 2rem',
-        color: '#000',
+    <header style={{ width: '100%',
+        margin: '0',
+        padding: '0',
+        boxSizing: 'border-box',
+        border: 'none',
+        marginLeft: '-3rem',
+        marginRight: '3rem'
+          }}>
+      <Link to="/" className="glowing-button" style={{
+        width: '10%',
         fontSize: '1.5rem',
-        fontWeight: 'bold',
-        textAlign: 'center'
+        textAlign: 'center',
+        display: 'block',
+        marginBottom: '-1.2rem',
+        marginLeft: '6rem'
       }}>
-        My Awesome Website
-      </div>
+        THE CINEMATIC FLY
+      </Link>
+
 
       <nav style={{
-        backgroundColor: 'rgba(31, 31, 31, 0)',
+        backgroundColor: 'transperant',
         color: '#000',
-        padding: '1rem',
+        fontSize: '1.5rem',
+        padding: '0rem',
         display: 'flex',
         justifyContent: 'center',
         gap: '2rem'
       }}>
-        <Link to="/" style={{ color: '#000', textDecoration: 'none' }}>Home</Link>
-        <Link to="/about" style={{ color: '#000', textDecoration: 'none' }}>About</Link>
-        <Link to="/awesome" style={{ color: '#000', textDecoration: 'none' }}>Awesome</Link>
-        <Link to="/photos" style={{ color: '#000', textDecoration: 'none' }}>Photos</Link>
+        <Link to="/" className="glowing-button">Home</Link>
+        <Link to="/about" className="glowing-button">About</Link>
+        <Link to="/awesome" className="glowing-button">Awesome</Link>
+        <Link to="/photos" className="glowing-button">Photos</Link>
+
         
       </nav>
     </header>
