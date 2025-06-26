@@ -34,6 +34,7 @@ function Header() {
       }}>
         <Link to="/" className="glowing-button">Home</Link>
         <Link to="/about" className="glowing-button">About</Link>
+        <Link to="/blog" className="glowing-button">Blog</Link>
         <Link to="/awesome" className="glowing-button">Awesome</Link>
         <Link to="/photos" className="glowing-button">Photos</Link>
 
