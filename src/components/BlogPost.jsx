@@ -40,7 +40,17 @@ export default function BlogPost({ slug }) {
       {meta.date && <p style={{ fontSize: "0.875rem", color: "#999" }}>{meta.date} — by {meta.author || "Anonymous"}</p>}
 
       <MDXProvider>
-        <Content />
+       <div style={{
+          fontSize: "1.125rem",       // ~18px
+          lineHeight: "1.75",         // Comfortable reading
+          color: "#333",              // Body text color
+          maxWidth: "700px",          // Optional: constrain line length
+          margin: "2rem auto",        // Centered content
+          padding: "0 1rem",          // Padding on small screens
+          fontFamily: "'Georgia', serif" // Optional: switch to serif for readability
+        }}>
+          <Content />
+        </div>
       </MDXProvider>
 
       <div style={{ marginTop: '2rem', display: 'flex', justifyContent: 'space-between' }}>

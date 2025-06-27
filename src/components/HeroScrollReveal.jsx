@@ -29,7 +29,8 @@ export default function HeroScrollReveal() {
       ease: "power2.out",
     });
 
-    
+  const scrollLength = window.innerHeight * .85; // 120% of viewport height
+
 
     gsap.from(".draw", {
       // drawSVG: "0%", // Requires DrawSVGPlugin
@@ -39,7 +40,7 @@ export default function HeroScrollReveal() {
       scrollTrigger: {
         trigger: ".hero",      // ⬅️ Use the whole section as the trigger
         start: "top top",       // ⬅️ Begin pinning as soon as it hits the top of the page
-        end: "+=1100",          // ⬅️ Tune this value to match scroll distance you want
+        end: `+=${scrollLength}`,          // ⬅️ Tune this value to match scroll distance you want
         scrub: true,
         pin: ".pin",
         pinSpacing: true,       // ⬅️ Allow layout flow to stay normal
@@ -49,9 +50,9 @@ export default function HeroScrollReveal() {
     });
 
     gsap.fromTo(".hero h1",
-      { scale: 1 },
+      { scale: 2.5 },
       {
-        scale: 1.2,
+        scale: 3,
         ease: "none",
         scrollTrigger: {
         trigger: ".hero",
@@ -66,7 +67,7 @@ export default function HeroScrollReveal() {
           gsap.fromTo(".text-zoom-section", 
       { scale: 0.9, opacity: 0.1 },
       {
-        scale: 1.4,
+        scale: 1.8,
         opacity: 1,
         scrollTrigger: {
           trigger: ".text-zoom-section",

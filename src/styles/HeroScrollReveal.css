@@ -14,7 +14,7 @@
   --f-5-max: 100;
   --fluid-bp: 1; /* ✅ Forces it to use the max size for now */
 
-  --step-5: calc(((var(--f-5-min) / 16) * 1rem) + (var(--f-5-max) - var(--f-5-min)) * var(--fluid-bp));
+  --step-5: calc(((var(--f-2-min) / 16) * 1rem) + (var(--f-5-max) - var(--f-5-min)) * var(--fluid-bp));
 }
 
 header {
@@ -70,8 +70,9 @@ a {
 }
 
 h1 {
-  font-size: 10rem !important; /* ✅ Hero title szie */
+  font-size: clamp(2rem, 10vw, 8rem); /* ✅ Hero title szie */
   line-height: 1;
+  white-space: nowrap;
   text-align: center;
   text-transform: uppercase;
   color: rgb(45, 44, 63);

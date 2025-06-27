@@ -10,8 +10,10 @@ export default function BlogLayout({ children, title }) {
       fontFamily: "'Mori', sans-serif",
       lineHeight: "1.6"
     }}>
-      <h1 style={{ fontSize: "2.5rem", marginBottom: "2rem" }}>{title}</h1>
-      {children}
+      <h1 className="blog-post-title">{title}</h1>
+      <div className="blog-content">
+        {children}
+      </div>
     </div>
   );
 }

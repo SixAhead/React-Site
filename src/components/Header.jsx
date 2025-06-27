@@ -12,11 +12,12 @@ function Header() {
         marginRight: '3rem'
           }}>
       <Link to="/" className="glowing-button" style={{
-        width: '10%',
-        fontSize: '1.2rem',
+        width: '15%',
+        minWidth: '14rem',
+        fontSize: '1rem',
         textAlign: 'center',
         display: 'block',
-        marginBottom: '-1.2rem',
+        marginBottom: '-1.rem',
         marginLeft: '6rem'
       }}>
         THE CINEMATIC FLY
