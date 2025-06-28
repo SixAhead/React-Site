@@ -1,15 +1,15 @@
-import React, { useRef } from 'react';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { useGSAP } from '@gsap/react';
+import React, { useRef } from "react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useGSAP } from "@gsap/react";
 
 const HomePage = () => {
   const container = useRef();
   useGSAP(
     () => {
       ScrollTrigger.create({
-        trigger: '.box-c',
-        start: 'center center',
-        end: '+=300',
+        trigger: ".box-c",
+        start: "center center",
+        end: "+=300",
         pin: true,
         markers: true,
       });
@@ -22,7 +22,7 @@ const HomePage = () => {
       <div className="header">
         <h1 className="title">ScrollSmoother &amp; React Router</h1>
         <p>
-          Simple example for setting up GSAP ScrollSmoother in a React App using{' '}
+          Simple example for setting up GSAP ScrollSmoother in a React App using{" "}
           <strong>
             <i>React</i> <i>Router</i>
           </strong>

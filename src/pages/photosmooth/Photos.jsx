@@ -1,12 +1,10 @@
+import "../../styles/gsap-brand.css"; // adjust path if needed
 
-import '../../styles/gsap-brand.css'; // adjust path if needed
-
-import Images from '../../components/Images';
+import Images from "../../components/Images";
 
 function Photos() {
   return (
     <div className="App">
-     
       <Images />
     </div>
   );

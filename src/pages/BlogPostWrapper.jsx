@@ -1,5 +1,5 @@
-import { useParams } from 'react-router-dom';
-import BlogPost from '../components/BlogPost';
+import { useParams } from "react-router-dom";
+import BlogPost from "../components/BlogPost";
 
 function BlogPostWrapper() {
   const { slug } = useParams();

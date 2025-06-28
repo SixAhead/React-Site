@@ -1,14 +1,13 @@
-import { Routes, Route, useLocation } from 'react-router';
+import { Routes, Route, useLocation } from "react-router";
 
-import gsap from 'gsap';
-import { ScrollSmoother } from 'gsap/ScrollSmoother';
-import { useGSAP } from '@gsap/react';
+import gsap from "gsap";
+import { ScrollSmoother } from "gsap/ScrollSmoother";
+import { useGSAP } from "@gsap/react";
 
-import Boxes from '../views/Boxes';
-import Images from '../views/Images';
+import Boxes from "../views/Boxes";
+import Images from "../views/Images";
 import ScramblePage from "../views/ScramblePage"; // Add this import
-import Home from '../pages/Home';
-
+import Home from "../pages/Home";
 
 gsap.registerPlugin(ScrollSmoother, useGSAP);
 

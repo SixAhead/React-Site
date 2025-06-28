@@ -8,7 +8,6 @@ body {
   font-family: system-ui, sans-serif;
 }
 
-
 :root {
   --color-shockingly-green: #0ae448;
   --color-just-black: #0e100f;
@@ -601,7 +600,7 @@ ul pre.prettyprint {
 
 pre {
   --ifm-pre-background: var(--ifm-color-gray-800) !important;
-  --ifm-font-family-monospace: 'Fraktion Mono';
+  --ifm-font-family-monospace: "Fraktion Mono";
 }
 
 /* Plain text style */
@@ -718,7 +717,7 @@ code .token.url {
 }
 
 .checkbox label:before {
-  content: '';
+  content: "";
   width: 20px;
   height: 20px;
   border-radius: 2px;
@@ -727,7 +726,7 @@ code .token.url {
   margin-right: 10px;
 }
 
-.checkbox input[type='checkbox']:checked ~ label:before {
+.checkbox input[type="checkbox"]:checked ~ label:before {
   background: var(--green) no-repeat center;
   background-size: 12px 12px;
   background-image: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjE2cHgiIGhlaWdodD0iMTZweCIgdmlld0JveD0iMCAwIDQ1LjcwMSA0NS43IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA0NS43MDEgNDUuNzsiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8Zz4KCTxnPgoJCTxwYXRoIGQ9Ik0yMC42ODcsMzguMzMyYy0yLjA3MiwyLjA3Mi01LjQzNCwyLjA3Mi03LjUwNSwwTDEuNTU0LDI2LjcwNGMtMi4wNzItMi4wNzEtMi4wNzItNS40MzMsMC03LjUwNCAgICBjMi4wNzEtMi4wNzIsNS40MzMtMi4wNzIsNy41MDUsMGw2LjkyOCw2LjkyN2MwLjUyMywwLjUyMiwxLjM3MiwwLjUyMiwxLjg5NiwwTDM2LjY0Miw3LjM2OGMyLjA3MS0yLjA3Miw1LjQzMy0yLjA3Miw3LjUwNSwwICAgIGMwLjk5NSwwLjk5NSwxLjU1NCwyLjM0NSwxLjU1NCwzLjc1MmMwLDEuNDA3LTAuNTU5LDIuNzU3LTEuNTU0LDMuNzUyTDIwLjY4NywzOC4zMzJ6IiBmaWxsPSIjRkZGRkZGIi8+Cgk8L2c+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==);
@@ -736,98 +735,98 @@ code .token.url {
 .flair {
   width: 100px;
   height: 100px;
-  background-image: url('https://gsap.com/_img/codepen/flair/Flair-0.png');
+  background-image: url("https://gsap.com/_img/codepen/flair/Flair-0.png");
   background-size: contain;
   background-repeat: no-repeat;
   will-change: transform;
 }
 
 .flair--2 {
-  background-image: url('https://gsap.com/_img/codepen/flair/Flair-2.png');
+  background-image: url("https://gsap.com/_img/codepen/flair/Flair-2.png");
 }
 
 .flair--3 {
-  background-image: url('https://gsap.com/_img/codepen/flair/Flair-3.png');
+  background-image: url("https://gsap.com/_img/codepen/flair/Flair-3.png");
 }
 
 .flair--4 {
-  background-image: url('https://gsap.com/_img/codepen/flair/Flair-4.png');
+  background-image: url("https://gsap.com/_img/codepen/flair/Flair-4.png");
 }
 
 .flair--5 {
-  background-image: url('https://gsap.com/_img/codepen/flair/Flair-5.png');
+  background-image: url("https://gsap.com/_img/codepen/flair/Flair-5.png");
 }
 
 .flair--6 {
-  background-image: url('https://gsap.com/_img/codepen/flair/Flair-6.png');
+  background-image: url("https://gsap.com/_img/codepen/flair/Flair-6.png");
 }
 
 .flair--7 {
-  background-image: url('https://gsap.com/_img/codepen/flair/Flair-7.png');
+  background-image: url("https://gsap.com/_img/codepen/flair/Flair-7.png");
 }
 
 .flair--8 {
-  background-image: url('https://gsap.com/_img/codepen/flair/Flair-8.png');
+  background-image: url("https://gsap.com/_img/codepen/flair/Flair-8.png");
 }
 
 .flair--9 {
-  background-image: url('https://gsap.com/_img/codepen/flair/Flair-9.png');
+  background-image: url("https://gsap.com/_img/codepen/flair/Flair-9.png");
 }
 
 .flair--10 {
-  background-image: url('https://gsap.com/_img/codepen/flair/Flair-10.png');
+  background-image: url("https://gsap.com/_img/codepen/flair/Flair-10.png");
 }
 
 .flair--11 {
-  background-image: url('https://gsap.com/_img/codepen/flair/Flair-11.png');
+  background-image: url("https://gsap.com/_img/codepen/flair/Flair-11.png");
 }
 
 .flair--12 {
-  background-image: url('https://gsap.com/_img/codepen/flair/Flair-12.png');
+  background-image: url("https://gsap.com/_img/codepen/flair/Flair-12.png");
 }
 
 .flair--13 {
-  background-image: url('https://gsap.com/_img/codepen/flair/Flair-13.png');
+  background-image: url("https://gsap.com/_img/codepen/flair/Flair-13.png");
 }
 
 .flair--14 {
-  background-image: url('https://gsap.com/_img/codepen/flair/Flair-14.png');
+  background-image: url("https://gsap.com/_img/codepen/flair/Flair-14.png");
 }
 
 .flair--15 {
-  background-image: url('https://gsap.com/_img/codepen/flair/Flair-15.png');
+  background-image: url("https://gsap.com/_img/codepen/flair/Flair-15.png");
 }
 
 .flair--16 {
-  background-image: url('https://gsap.com/_img/codepen/flair/Flair-16.png');
+  background-image: url("https://gsap.com/_img/codepen/flair/Flair-16.png");
 }
 
 .flair--17 {
-  background-image: url('https://gsap.com/_img/codepen/flair/Flair-17.png');
+  background-image: url("https://gsap.com/_img/codepen/flair/Flair-17.png");
 }
 
 .flair--18 {
-  background-image: url('https://gsap.com/_img/codepen/flair/Flair-18.png');
+  background-image: url("https://gsap.com/_img/codepen/flair/Flair-18.png");
 }
 
 .flair--19 {
-  background-image: url('https://gsap.com/_img/codepen/flair/Flair-19.png');
+  background-image: url("https://gsap.com/_img/codepen/flair/Flair-19.png");
 }
 
 .flair--20 {
-  background-image: url('https://gsap.com/_img/codepen/flair/Flair-20.png');
+  background-image: url("https://gsap.com/_img/codepen/flair/Flair-20.png");
 }
 
 .flair--21 {
-  background-image: url('https://gsap.com/_img/codepen/flair/Flair-21.png');
+  background-image: url("https://gsap.com/_img/codepen/flair/Flair-21.png");
 }
 
 .flair--22 {
-  background-image: url('https://gsap.com/_img/codepen/flair/Flair-22.png');
+  background-image: url("https://gsap.com/_img/codepen/flair/Flair-22.png");
 }
 
 .flair--23 {
-  background-image: url('https://gsap.com/_img/codepen/flair/Flair-23.png');
+  background-image: url("https://gsap.com/_img/codepen/flair/Flair-23.png");
 }
 
 .flair-cont {
@@ -840,7 +839,7 @@ code .token.url {
 
 .gradient-green {
   background: var(--gradient-macha),
-    url('https://gsap.com/_img/codepen/flair/noise.png');
+    url("https://gsap.com/_img/codepen/flair/noise.png");
   /* Replace with the path to your noise texture image */
   background-blend-mode: color-dodge;
   /* Blend the noise texture with the gradient */
@@ -848,7 +847,7 @@ code .token.url {
 
 .gradient-green-2 {
   background: var(--gradient-emerald-city),
-    url('https://gsap.com/_img/codepen/flair/noise.png');
+    url("https://gsap.com/_img/codepen/flair/noise.png");
   /* Replace with the path to your noise texture image */
   background-blend-mode: color-dodge;
   /* Blend the noise texture with the gradient */
@@ -856,7 +855,7 @@ code .token.url {
 
 .gradient-orange {
   background: var(--gradient-orange-crush),
-    url('https://gsap.com/_img/codepen/flair/noise.png');
+    url("https://gsap.com/_img/codepen/flair/noise.png");
   /* Replace with the path to your noise texture image */
   background-blend-mode: color-dodge;
   /* Blend the noise texture with the gradient */
@@ -864,7 +863,7 @@ code .token.url {
 
 .gradient-purple {
   background: var(--gradient-purple-haze),
-    url('https://gsap.com/_img/codepen/flair/noise.png');
+    url("https://gsap.com/_img/codepen/flair/noise.png");
   /* Replace with the path to your noise texture image */
   background-blend-mode: color-dodge;
   /* Blend the noise texture with the gradient */
@@ -872,7 +871,7 @@ code .token.url {
 
 .gradient-blue-2 {
   background: var(--gradient-summer-fair),
-    url('https://gsap.com/_img/codepen/flair/noise.png');
+    url("https://gsap.com/_img/codepen/flair/noise.png");
   /* Replace with the path to your noise texture image */
   background-blend-mode: color-dodge;
   /* Blend the noise texture with the gradient */
@@ -880,7 +879,7 @@ code .token.url {
 
 .gradient-blue {
   background: var(--color-ui-gradient),
-    url('https://gsap.com/_img/codepen/flair/noise.png');
+    url("https://gsap.com/_img/codepen/flair/noise.png");
   /* Replace with the path to your noise texture image */
   background-blend-mode: color-dodge;
   /* Blend the noise texture with the gradient */
@@ -888,7 +887,7 @@ code .token.url {
 
 .gradient-red {
   background: var(--gradient-lipstick),
-    url('https://gsap.com/_img/codepen/flair/noise.png');
+    url("https://gsap.com/_img/codepen/flair/noise.png");
   /* Replace with the path to your noise texture image */
   background-blend-mode: color-dodge;
   /* Blend the noise texture with the gradient */
@@ -899,13 +898,13 @@ code .token.url {
 }
 
 .noise:after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   bottom: 0;
   right: 0;
   left: 0;
-  background: url('https://gsap.com/_img/codepen/flair/noise.png');
+  background: url("https://gsap.com/_img/codepen/flair/noise.png");
   opacity: 0.4;
   pointer-events: none;
 }

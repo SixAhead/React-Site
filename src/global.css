@@ -5,7 +5,8 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   overflow: auto;
 }
@@ -15,11 +16,10 @@ html, body {
 }
 
 #smooth-wrapper {
-  position: fixed;          
+  position: fixed;
   overflow: hidden;
   position: relative;
 }
-
 
 #smooth-content {
   will-change: transform;
@@ -49,7 +49,8 @@ html, body {
   box-shadow: 0 0 10px #070707, 0 0 20px #070707, 0 0 40px #00eeff;
 }
 
-html, body {
+html,
+body {
   overflow-x: hidden;
 }
 
@@ -57,7 +58,9 @@ html, body {
   box-sizing: border-box;
 }
 
-#root, #smooth-wrapper, #smooth-content {
+#root,
+#smooth-wrapper,
+#smooth-content {
   width: 100%;
   overflow-x: hidden;
 }
@@ -97,11 +100,10 @@ html, body {
   text-align: center; /* ✅ Centers text horizontally */
   display: flex;
   flex-direction: column;
-  align-items: center;     /* ✅ Center children horizontally */
+  align-items: center; /* ✅ Center children horizontally */
   justify-content: center; /* ✅ Center children vertically */
   height: 100%;
 }
-
 
 .card-text h3 {
   margin: 0 0 0.5rem;
@@ -113,23 +115,20 @@ html, body {
   opacity: 0.8;
 }
 
-
 .blog-post-title {
   font-size: 3.5rem;
   margin-bottom: 1rem;
   font-weight: bold;
   line-height: 1.2;
   text-align: center;
-  text-shadow:0 0 2px #070707, 0 0 4px #070707;
-
+  text-shadow: 0 0 2px #070707, 0 0 4px #070707;
 }
 
 .blog-content h2 {
   font-size: 2.5rem;
   color: #444;
   margin-top: 2rem;
-  text-shadow:0 0 2px #070707, 0 0 4px #070707;
-
+  text-shadow: 0 0 2px #070707, 0 0 4px #070707;
 }
 
 .blog-content p {

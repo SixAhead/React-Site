@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Unbounded:wght@700&display=swap");
 
 #smooth-wrapper {
-  font-family: 'Unbounded', sans-serif;
+  font-family: "Unbounded", sans-serif;
 }
 
 .pin-spacer {
@@ -9,12 +9,14 @@
 }
 
 :root {
-  
   --f-5-min: 20;
   --f-5-max: 100;
   --fluid-bp: 1; /* ✅ Forces it to use the max size for now */
 
-  --step-5: calc(((var(--f-2-min) / 16) * 1rem) + (var(--f-5-max) - var(--f-5-min)) * var(--fluid-bp));
+  --step-5: calc(
+    ((var(--f-2-min) / 16) * 1rem) + (var(--f-5-max) - var(--f-5-min)) *
+      var(--fluid-bp)
+  );
 }
 
 header {
@@ -27,7 +29,6 @@ header {
 footer {
   position: static !important;
 }
-
 
 button {
   cursor: pointer;
@@ -44,7 +45,6 @@ button:hover {
   position: relative;
   padding-top: 20rem;
 }
-
 
 .logo {
   width: 50px;
@@ -79,7 +79,6 @@ h1 {
   z-index: 10;
   position: relative;
 }
-
 
 .images {
   display: grid;
@@ -120,7 +119,6 @@ img {
   opacity: 0;
 }
 
-
 .heading {
   position: relative;
   z-index: 2;
@@ -132,10 +130,9 @@ img {
 
   height: 15vh;
   display: flex;
-  align-items: flex-start;   /* ⬅️ was center — now moves it up */
+  align-items: flex-start; /* ⬅️ was center — now moves it up */
   justify-content: center;
-  padding-top: 5h;         /* ⬅️ fine-tune this as needed */
-
+  padding-top: 5h; /* ⬅️ fine-tune this as needed */
 }
 
 .pin,

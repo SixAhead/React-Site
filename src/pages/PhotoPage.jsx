@@ -35,10 +35,9 @@ export default function PhotoPage() {
   return (
     <div id="smooth-wrapper" ref={wrapperRef}>
       <div id="smooth-content" ref={contentRef}>
-        
         <Images />
         {/* any extra bottom spacing */}
-         <div style={{ height: '20vh' }}></div>
+        <div style={{ height: "20vh" }}></div>
       </div>
     </div>
   );

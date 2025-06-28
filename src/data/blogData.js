@@ -1,8 +1,8 @@
 // src/data/blogData.js
-const mdxFiles = import.meta.glob('../posts/*.mdx', { eager: true });
+const mdxFiles = import.meta.glob("../posts/*.mdx", { eager: true });
 
 export const posts = Object.entries(mdxFiles).map(([path, module]) => {
-  const slug = path.split('/').pop().replace('.mdx', '');
+  const slug = path.split("/").pop().replace(".mdx", "");
   return {
     slug,
     title: module.title || "Untitled",

@@ -6,7 +6,7 @@
 
 body {
   overscroll-behavior: none;
-  background-color: #ffffff;  /* homepage main background colour */
+  background-color: #ffffff; /* homepage main background colour */
   margin: 0;
   padding: 0;
   overflow-x: hidden;
@@ -84,7 +84,6 @@ button {
   text-align: center;
   font-size: 40px;
 }
-
 
 .end {
   position: absolute;
@@ -212,9 +211,6 @@ header .icon {
   height: 130vh;
 }
 
-
-
-
 @media screen and (min-width: 1000px) {
   .image-grid .image_cont {
     max-height: 120vh;
@@ -228,20 +224,18 @@ header .icon {
     grid-column: 8 / span 4;
   }
 
-    .image-grid .image_cont:nth-child(4) {
+  .image-grid .image_cont:nth-child(4) {
     grid-column: 1 / span 12;
   }
 
   .image-grid .image_cont:nth-child(5) {
-    grid-column: 2/ span 4;
+    grid-column: 2 / span 4;
   }
 
   .image-grid .image_cont:nth-child(6) {
     grid-column: 1 / span 12;
     height: 105vh;
   }
-
-
 }
 
 .overlay {
@@ -271,7 +265,8 @@ header .icon {
   outline: none;
 }
 
-html, body {
+html,
+body {
   position: static;
   width: auto;
   height: auto;
@@ -284,4 +279,3 @@ html, body {
   margin: 0;
   padding: 0;
 }
-
